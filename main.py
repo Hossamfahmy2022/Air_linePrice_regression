@@ -44,13 +44,13 @@ def Air_linePrice_regression():
 
         ## Predict using Model
         
-        y_pred = model.predict(X_processed)
+        y_pred = model.predict(X_processed)[0]
 
 
         y_pred = np.exp(y_pred) - 1
 
         ## Display Results
-        st.success(f'Air line Price Prediction is ... {y_pred}')
+        st.success(f'Air line Price Prediction is ... {y_pred:.2f}')
 
 
 
