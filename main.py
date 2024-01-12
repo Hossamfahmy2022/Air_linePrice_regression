@@ -25,7 +25,7 @@ def Air_linePrice_regression():
     Airline = st.selectbox('Airline', options=df["Airline"].unique().tolist())
     Source = st.selectbox('Source', options=df["Source"].unique().tolist())
     Destination = st.selectbox('Destination', options=df["Destination"].unique().tolist())
-    Total_Stops = st.selectbox('Total_Stops', options=df["Total_Stops"].unique().tolist())
+    Total_Stops = st.selectbox('Total_Stops', options=[2, 1, 0, 3, 4])
     Day_of_Journey = st.selectbox('Day_of_Journey', options=['Sunday', 'Tuesday', 'Friday', 'Thursday', 'Wednesday', 'Monday', 'Saturday'])
     Month_of_Journey = st.selectbox('Month_of_Journey', options=['June', 'March', 'May', 'April'])
     Dep_Time_Hour = st.selectbox('Airline_Time_Hour', options=['Am', 'Pm'])
