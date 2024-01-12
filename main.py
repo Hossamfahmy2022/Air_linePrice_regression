@@ -1,6 +1,6 @@
 ## Import Libraries
-import streamlit as st
 import joblib
+import streamlit as st
 import numpy as np
 from utlis import process_new
 import pandas as pd
@@ -26,9 +26,9 @@ def Air_linePrice_regression():
     Source = st.selectbox('Source', options=df["Source"].unique().tolist())
     Destination = st.selectbox('Destination', options=df["Destination"].unique().tolist())
     Total_Stops = st.selectbox('Total_Stops', options=df["Total_Stops"].unique().tolist())
-    Day_of_Journey = st.selectbox('Day_of_Journey', options=df["Day_of_Journey"].unique().tolist())
-    Month_of_Journey = st.selectbox('Month_of_Journey', options=df["Month_of_Journey"].unique().tolist())
-    Dep_Time_Hour = st.selectbox('Airline_Time_Hour', options=df["Dep_Time_Hour"].unique().tolist())
+    Day_of_Journey = st.selectbox('Day_of_Journey', options=['Sunday', 'Tuesday', 'Friday', 'Thursday', 'Wednesday', 'Monday', 'Saturday'])
+    Month_of_Journey = st.selectbox('Month_of_Journey', options=['June', 'March', 'May', 'April'])
+    Dep_Time_Hour = st.selectbox('Airline_Time_Hour', options=['Am', 'Pm'])
     Duration_with_minutes = st.slider('Airline Duration with minutes ',85,2860,10)
     st.markdown('<hr>', unsafe_allow_html=True)
 
