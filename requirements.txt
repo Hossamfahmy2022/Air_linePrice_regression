@@ -1,9 +1,7 @@
-scikit-learn==1.2.2
-sklearn-features==0.0.2
-lazypredict
-imblearn
-missingno
+category_encoders==2.6.3
+joblib==1.3.2
+numpy==1.26.3
+pandas==2.1.4
+scikit_learn==1.2.2
+sklearn_features==0.0.2
 streamlit==1.27.1
-matplotlib
-seaborn
-plotly
